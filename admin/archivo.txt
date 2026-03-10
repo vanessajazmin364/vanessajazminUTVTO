@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Administrador de Citas Dentales</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div class="login-container" id="login">
+
+<div class="login-box">
+
+<h2>Login Clínica Dental</h2>
+
+<input type="text" id="usuario" placeholder="Usuario">
+<input type="password" id="password" placeholder="Contraseña">
+
+<button onclick="login()">Entrar</button>
+
+</div>
+</div>
+
+
+<!-- SISTEMA -->
+
+<div id="sistema">
+
+<h1>Administrador de Citas Dentales</h1>
+
+<button onclick="logout()">Cerrar sesión</button>
+
+<div class="container">
+
+<div class="formulario">
+
+<h3>Datos del Paciente</h3>
+
+<input type="text" id="nombre" placeholder="Nombre">
+<input type="text" id="telefono" placeholder="Teléfono">
+<input type="email" id="correo" placeholder="Correo">
+<input type="date" id="fecha">
+<input type="time" id="hora">
+
+<textarea id="motivo" placeholder="Motivo"></textarea>
+
+<button onclick="agregarCita()">Agregar Cita</button>
+
+</div>
+
+<div class="citas">
+
+<h3>Citas Registradas</h3>
+
+<div id="listaCitas"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
